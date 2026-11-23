@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .pipe { fill: none; stroke: #2B9BB5; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+      .pipe-thin { fill: none; stroke: #2B9BB5; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+      .valve { fill: none; stroke: #2B9BB5; stroke-width: 1.5; }
+      .drop { fill: #2B9BB5; stroke: none; }
+      .fitting { fill: none; stroke: #2B9BB5; stroke-width: 2; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Horizontal pipe segment - top area -->
+  <line class="pipe" x1="0" y1="45" x2="85" y2="45"/>
+  <line class="pipe" x1="85" y1="45" x2="85" y2="10"/>
+  <!-- Elbow joint circle at bend -->
+  <circle class="valve" cx="85" cy="45" r="4"/>
+
+  <!-- T-junction connector - middle left -->
+  <line class="pipe" x1="20" y1="120" x2="120" y2="120"/>
+  <line class="pipe" x1="70" y1="120" x2="70" y2="175"/>
+  <!-- T-junction cap -->
+  <circle class="valve" cx="70" cy="120" r="3.5"/>
+
+  <!-- Valve wheel - top right -->
+  <circle class="valve" cx="210" cy="55" r="12"/>
+  <circle class="valve" cx="210" cy="55" r="5"/>
+  <line class="pipe-thin" x1="210" y1="43" x2="210" y2="67"/>
+  <line class="pipe-thin" x1="198" y1="55" x2="222" y2="55"/>
+  <line class="pipe-thin" x1="201" y1="46" x2="219" y2="64"/>
+  <line class="pipe-thin" x1="219" y1="46" x2="201" y2="64"/>
+  <!-- Pipes connected to valve -->
+  <line class="pipe" x1="170" y1="55" x2="198" y2="55"/>
+  <line class="pipe" x1="222" y1="55" x2="270" y2="55"/>
+
+  <!-- Vertical pipe with elbow - right side -->
+  <line class="pipe" x1="260" y1="100" x2="260" y2="180"/>
+  <line class="pipe" x1="260" y1="180" x2="200" y2="180"/>
+  <!-- Elbow fitting -->
+  <path class="fitting" d="M 260,170 Q 260,180 250,180" fill="none"/>
+  <circle class="valve" cx="260" cy="180" r="3"/>
+
+  <!-- Faucet silhouette - center -->
+  <path class="pipe" d="M 140,140 L 140,110 Q 140,100 150,100 L 175,100 Q 185,100 185,110 L 185,115"/>
+  <!-- Faucet spout -->
+  <path class="pipe" d="M 185,115 Q 185,125 175,125 L 165,125"/>
+  <!-- Faucet handle -->
+  <line class="pipe-thin" x1="155" y1="95" x2="165" y2="85"/>
+  <circle class="valve" cx="165" cy="85" r="3"/>
+  <!-- Drip from faucet -->
+  <ellipse class="drop" cx="165" cy="133" rx="2" ry="3"/>
+
+  <!-- Horizontal pipe segment - lower area -->
+  <line class="pipe" x1="0" y1="230" x2="100" y2="230"/>
+  <line class="pipe" x1="100" y1="230" x2="100" y2="265"/>
+  <line class="pipe" x1="100" y1="265" x2="170" y2="265"/>
+  <!-- Elbow joints -->
+  <circle class="valve" cx="100" cy="230" r="3"/>
+  <circle class="valve" cx="100" cy="265" r="3"/>
+
+  <!-- Small valve wheel - bottom right -->
+  <circle class="valve" cx="235" cy="245" r="9"/>
+  <circle class="valve" cx="235" cy="245" r="3.5"/>
+  <line class="pipe-thin" x1="235" y1="236" x2="235" y2="254"/>
+  <line class="pipe-thin" x1="226" y1="245" x2="244" y2="245"/>
+  <!-- Pipes to small valve -->
+  <line class="pipe" x1="200" y1="245" x2="226" y2="245"/>
+  <line class="pipe" x1="244" y1="245" x2="300" y2="245"/>
+
+  <!-- Scattered water droplets -->
+  <ellipse class="drop" cx="35" cy="80" rx="1.8" ry="2.8"/>
+  <ellipse class="drop" cx="155" cy="200" rx="1.5" ry="2.3"/>
+  <ellipse class="drop" cx="280" cy="140" rx="1.8" ry="2.8"/>
+  <ellipse class="drop" cx="45" cy="190" rx="1.3" ry="2"/>
+  <ellipse class="drop" cx="240" cy="290" rx="1.5" ry="2.3"/>
+  <ellipse class="drop" cx="130" cy="30" rx="1.3" ry="2"/>
+
+  <!-- Pipe segment crossing top-right to continue tiling -->
+  <line class="pipe" x1="270" y1="0" x2="270" y2="30"/>
+
+  <!-- Short pipe stub - bottom left for tiling continuity -->
+  <line class="pipe" x1="0" y1="280" x2="30" y2="280"/>
+  <line class="pipe" x1="30" y1="280" x2="30" y2="300"/>
+
+  <!-- Pipe fitting dots for visual rhythm -->
+  <circle class="drop" cx="170" cy="265" r="2.5"/>
+  <circle class="drop" cx="200" cy="245" r="2"/>
+
+  <!-- Additional small connector pipe - upper middle for density -->
+  <line class="pipe-thin" x1="130" y1="60" x2="160" y2="60"/>
+  <line class="pipe-thin" x1="160" y1="60" x2="160" y2="80"/>
+
+</svg>
